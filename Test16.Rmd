@@ -2,12 +2,11 @@
 title: "test16"
 author: "SASIWIPHA SRIKUEAKUN"
 date: "2023-05-21"
-output: html_document
+output:
+  html_document:
+    fig_caption: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Step 2 from branch2 modify
 
@@ -19,8 +18,34 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+<<<<<<< Updated upstream
 graph
+=======
+[ABS](https://www.abs.gov.au/census/find-census-data/geopackages?release=2016&geography=VIC&topic=ATSIP&type=ATSIP)
+
+Question3 from main 
 ```{r}
-plot(pressure)
+library(ggplot2)
+mpg
+summary(mpg)
 ```
 
+>>>>>>> Stashed changes
+```{r}
+library(kableExtra)
+library(knitr)
+```
+
+<<<<<<< Updated upstream
+=======
+
+sue this graph
+```{r scat, fig.cap= "people"}
+# Create a scatter plot using the mpg dataset
+ggplot(data = mpg, aes(x = displ, y = hwy)) +
+  geom_point() +
+  labs(x = "Engine Displacement", y = "Highway MPG", title = "Scatter Plot of MPG Dataset")
+```
+Figure \ref(fig:scat) shows a scatter plot of the MPG dataset.
+
+>>>>>>> Stashed changes
